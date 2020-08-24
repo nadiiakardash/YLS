@@ -6325,6 +6325,10 @@ footer .footer__content-right .footer__greenbtn:hover {
   margin-left: -80px;
 }
 
+#text_result-block {
+  padding-top: 30px;
+}
+
 @media screen and (max-width: 991px) {
   #block_result {
     margin-left: 0;
