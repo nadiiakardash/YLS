@@ -165,51 +165,28 @@
     }
 }
 @media screen and (max-width: 1315px) {
-    .block-values {
-        width: 80%;
+    .blocktext_values {
+       
+        padding-left: 70px;
     }
-    // .texting-offer {
-    //     font-size: 20px;
-    //     text-align: center;
-    //     margin-top: 110px;
-    // }
+
     .offer-container {
         width: 1050px;
         padding-bottom: 300px;
      
     }
-    #particles-js {
-        margin-left: 0px;
-        width: 50%;
-        height: 600px;
-        position: absolute;
-        z-index: 0;
-        margin-top: 50px;
-    }
+   
     .offer-item {
         width: 490px;
         height: 150px;
         padding: 37px 20px 0px 50px;
     }
  
-    .text-offer {
-        font-size: 15px;
-    }
-    .our-values {
-        padding-top: 118px;
-        margin-top: 60px;
-    }
+ 
     .block-values {
         width: 100%;
     }
-    .bg-values{
-        display: none;
-    }
-    .texting-offer {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 110px;
-    }
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -226,23 +203,55 @@
     }
    
 }
+@media screen and (max-width: 1195px) {
+    .bg-values{
+        display: none;
+    }
+    .texting-offer {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 110px;
+    }
+       .text-offer {
+        font-size: 15px;
+    }
+    .our-values {
+        padding-top: 118px;
+        margin-top: 60px;
+    }
+        .texting-offer {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 110px;
+    }
+    .blocktext_values {
+       
+        padding-left: 0px;
+    }
+}
 @media screen and (max-width: 1140px) {
     .texting-offer {
         font-size: 20px;
         text-align: center;
-        margin-top: 40px;
+  
     }
     .our-values {
         padding-top: 128px;
         margin-top: 120px;
     }
     .values-txt {
-      margin-top: 10px;
-      text-align: center;
-      position: static;
+      margin-top: 20px;
+
       z-index: 1;
     }
-  
+    #particles-js {
+        margin-left: 0px;
+        width: 50%;
+        height: 600px;
+        position: absolute;
+        z-index: 0;
+        margin-top: 50px;
+    }
    
 }
 @media screen and (max-width: 1070px) {
@@ -303,12 +312,16 @@
             width: 50px;
         }
     }
-
+    .values-txt {
+        margin-top: -20px;
+  
+        z-index: 1;
+      }
     .texting-offer {
         font-size: 14px;
         width: 300px;
         line-height: 20px;
-        margin-top: 40px;
+        margin-top: 50px;
     }
     .offer-item {
         display: flex;
@@ -445,9 +458,23 @@
         margin-top: 60px;
     }
     .courses-general {
-        padding-top: 100px;
+        padding-top: 280px;
         max-width: 1000px;
     }
+    .courses_texting{
+margin-top: -20px;
+padding-left: 70px;
+    }
+}
+@media screen and (max-width: 1195px) {
+    .courses-general {
+        padding-top: 120px;
+        max-width: 600px;
+    }
+    .courses_texting{
+margin-top: 0px;
+padding-left: 0px;
+    } 
 }
 @media screen and (max-width: 1060px) {
     .empty-block {
@@ -498,4 +525,10 @@
     .courses-general {
         padding-top: 80px;
     }
+}
+@media screen and (max-width: 410px) {
+    .values-txt {
+        margin-top: 10px;
+ 
+      }
 }

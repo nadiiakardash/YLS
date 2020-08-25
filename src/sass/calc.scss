@@ -478,7 +478,9 @@ footer .footer__content-right .footer__greenbtn:hover {
         max-width: 300px;
         padding: 60px 30px 50px 30px;
     }
-
+    header.darkheader {
+        height: 120px;
+    }
     .calcform .stepwrap3 .radiofield .radiofield__box label .titlest3 {
         padding-bottom: 5px;
         margin-bottom: 15px;
@@ -496,7 +498,11 @@ footer .footer__content-right .footer__greenbtn:hover {
         }
     }
 }
-
+@media(max-width:767px) {
+    header.darkheader {
+        height: 90px;
+    }
+}
 @media(max-width:991.8px) {
     .stepshead .stepshead__box .stepshead__num:after {
         display: none;
@@ -559,5 +565,13 @@ footer .footer__content-right .footer__greenbtn:hover {
 
     .calcform .stepwrap4 .radiofield .radiofield__box .radiobox label {
         display: block;
+    }
+}
+
+@media(max-width:517px) {
+  
+
+    header.darkheader {
+        height: 160px;
     }
 }

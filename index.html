@@ -17,8 +17,8 @@
 
   <script src="assets/js/app.js" defer></script>
   <link rel="stylesheet" href="assets/css/app.css">
-  <!-- BrowserSync -->
-  <!-- <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.4"></script> -->
+  <!-- BrowserSync   -->
+   <!-- <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.4"></script> -->
 
 </head>
 
@@ -1187,7 +1187,7 @@
       </div>
       <div class="block-about">
         <h2 class="bg-txt-about about_adap">Про YLS</h2>
-        <h3 class="main-txt-about title_adapt">Про YLS</h3>
+        <h3  id="about-txt_adap" class="main-txt-about title_adapt">Про YLS</h3>
         <div class="block-text">
           <h3 class="text-title">Young Leaders School</h3>
           <p class="block-texting">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit, dui a
@@ -1423,16 +1423,14 @@
 
     </section>
     <section class="our-values">
-
-
-      <div class="block-values">
+      <div class="block-values blocktext_values">
         <div id="particles-js"></div>
 
         <h2 class="bg-txt-about bg-values">Цінності</h2>
         <h3 class="main-txt-about values-txt">Наші Цінності</h3>
       </div>
       <div class="block-values">
-        <p class="texting-offer">Ми пропонуємо Вам цікавий навчальний маршрут, який включатиме:</p>
+        <p class="texting-offer blocktext_values">Ми пропонуємо Вам цікавий навчальний маршрут, який включатиме:</p>
         <div class="offer-container">
           <div class="offer-item">
             <svg class="computer-svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
@@ -2304,7 +2302,7 @@
     </div> -->
 
     <section class="our-courses">
-      <div class="included-programs">
+      <div class="included-programs  courses_texting">
         <h2 class="bg-txt-about">Наші курси</h2>
         <h3 class="main-txt-about">Наші курси</h3>
       </div>
@@ -2430,12 +2428,12 @@
       </div>
     </section>
 
-    <div class="included-programs">
-      <h2 class="bg-txt-about">Останні події</h2>
-      <h3 class="main-txt-about">Останні події</h3>
+    <div id="events_texting" class="included-programs">
+      <h2 class="bg-txt-about last_event">Останні події</h2>
+      <h3 class="main-txt-about last_event-txt">Останні події</h3>
     </div>
     <section class="recent-events">
-      <div class="bg-events bg_adapt">
+      <div id="bg-event_grey" class="bg-events bg_adapt">
         <div class="block-events">
           <a href="#">
           <div class="events-item">
@@ -2473,7 +2471,7 @@
             </div>
           </div></a>
           <a href="#">
-          <div   class="events-item">
+          <div   class="events-item adapt_event-block">
             <div class="bg-block-item"><svg class="green-line" width="223" height="235" viewBox="0 0 223 235"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filterd0_d)">
@@ -2606,7 +2604,7 @@
       <div class="catalog-section catalog_block">
         <div class="courses-container">
           <div class="courses-row">
-            <div class="left-title">
+            <div class="left-title center-title_adapt">
               <h2>Наш каталог <span>Каталог</span></h2>
             </div>
             <div class="rightbtn"><a href="#" download>Завантажити</a></div>
@@ -2651,7 +2649,7 @@
       </div>
     </div>
   </footer>
- <div id="preloader">
+ <!-- <div id="preloader">
     <svg  id="clip-path" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g class="circle-mask" clip-path="url(#clip0)">
       <path  d="M59.4552 56.0852C59.8215 57.1759 59.7735 58.3632 59.3205 59.4209C58.3233 58.8473 57.5711 57.9278 57.2065 56.8367C56.8418 55.7456 56.89 54.5587 57.3419 53.5007C58.3398 54.0735 59.092 54.9934 59.4552 56.0852Z" fill="#099939"/>
@@ -2699,7 +2697,7 @@
       </clipPath>
       </defs>
       </svg>
-  </div> 
+  </div>  -->
 </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>

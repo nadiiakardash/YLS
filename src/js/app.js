@@ -128,7 +128,11 @@ if ($('*').is('.about-yls')) {
      
       document.getElementById("phone-animation").style.bottom = "20px";
       document.getElementById("individ-block").style.paddingTop= "70px";
-     
+      var mql = window.matchMedia('all and (max-width: 353px)');
+      if (mql.matches) {
+          document.getElementById("phone-animation").style.right = "-20px";
+      }
+      
  }
  else {
   // document.getElementById("individ-block").style.marginTop = "134px";
@@ -136,25 +140,57 @@ if ($('*').is('.about-yls')) {
   document.getElementById("phone-animation").style.bottom = "0px";
   document.getElementById("phone-animation").style.marginTop = "-100px";
   document.getElementById("individ-block").style.paddingTop= "20px";
+  var mql = window.matchMedia('all and (max-width: 353px)');
+    if (mql.matches) {
+        document.getElementById("phone-animation").style.right = "0px";
+      }
 
 }
 }
 }
-//pre
-if ($('*').is('#main-container')) {
+//
+if ($('*').is('.courses_page')) {
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.documentElement.scrollTop > 300) {
+        document.getElementById("footer-main").style.zIndex = "44";
+        document.getElementById("phone-animation").style.position = "fixed";
+       
+        document.getElementById("phone-animation").style.bottom = "20px";
+         var mql = window.matchMedia('all and (max-width: 353px)');
+        if (mql.matches) {
+            document.getElementById("phone-animation").style.right = "-20px";
+        }
+        
+   }
+   else {
+    // document.getElementById("individ-block").style.marginTop = "134px";
+    document.getElementById("phone-animation").style.position = "relative";
+    document.getElementById("phone-animation").style.bottom = "0px";
+    document.getElementById("phone-animation").style.marginTop = "-100px";
+     var mql = window.matchMedia('all and (max-width: 353px)');
+      if (mql.matches) {
+          document.getElementById("phone-animation").style.right = "0px";
+        }
+  
+  }
+  }
+  }
+// pre
+// if ($('*').is('#main-container')) {
 
-function loadData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(resolve, 2000);
-  })
-}
-loadData()
-  .then(() => {
-    let preloaderEl = document.getElementById('preloader');
-    preloaderEl.classList.add('hidden');
-    preloaderEl.classList.remove('visible');
-  });
-}
+// function loadData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(resolve, 2000);
+//   })
+// }
+// loadData()
+//   .then(() => {
+//     let preloaderEl = document.getElementById('preloader');
+//     preloaderEl.classList.add('hidden');
+//     preloaderEl.classList.remove('visible');
+//   });
+// }
 //
 window.btnOver = function () { btnOver() };
 function btnOver() {
@@ -232,7 +268,7 @@ function btnOut6() {
 }
 //text writer
 $(document).ready(function () {
-
+  
     $('.single-item').slick({
         prevArrow: $('.prev-slider-video'),
         nextArrow: $('.next-slider-video'),
@@ -284,6 +320,7 @@ $(document).ready(function () {
   $(".close-modal-call").click(function(){
     $(".search-mobile-cours").css("opacity", "1");
   });
+
     });
 // });
 //
@@ -357,6 +394,7 @@ if ($('*').is('.welcome-txt')) {
         reverse();
     }
     textWriter(textNode, textTime);
+    $(".yls-txt").delay(2000).fadeIn();
 }
 //
 window.closepopTime = function () { closepopTime() };

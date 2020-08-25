@@ -293,17 +293,9 @@
   font-size: 48px;
   line-height: 88px;
   color: white;
-  animation: apear 4s;
+  display: none;
 }
 
-@keyframes apear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .general-text {
   text-align: left;
   width: 954px;
@@ -1135,8 +1127,8 @@
 @media only screen and (max-width: 912px) {
   .popup-time-content {
     background: none;
-    width: 100%;
-    height: 429px;
+    width: 650px;
+    height: 339px;
     text-align: center;
   }
   .popup-time-content h3 {
@@ -1145,7 +1137,7 @@
     position: relative;
     font-size: 24px;
     line-height: 30px;
-    padding-top: 66px;
+    padding-top: 86px;
     padding-left: 50px;
     width: 316px;
     height: 122px;
@@ -1155,8 +1147,9 @@
   .img_popup {
     display: block;
     margin-top: -100px;
-    width: 500px;
-    height: 300px;
+    width: 650px;
+    height: 330px;
+    position: absolute;
   }
 
   #btn-get {
@@ -1168,60 +1161,106 @@
   }
 
   #close-pop-time {
-    margin: 0;
-    right: 20%;
-    position: absolute;
-  }
-}
-@media only screen and (max-width: 798px) {
-  #close-pop-time {
-    right: 10%;
-  }
-  #close-pop-time svg {
-    width: 70px;
+    right: 0;
+    position: relative;
+    z-index: 99;
   }
 
   #btn-get-pop {
-    margin-left: -130px;
+    margin-left: -95px;
+    position: absolute;
+    margin-top: 220px;
+  }
+}
+@media only screen and (max-width: 798px) {
+  #close-pop-time svg {
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .img_popup {
+    margin-top: -100px;
+    width: 540px;
+    height: 280px;
   }
 
+  .popup-time-content {
+    background: none;
+    width: 550px;
+    height: 429px;
+    text-align: center;
+  }
   .popup-time-content h3 {
-    font-size: 18px;
-    padding-left: 40px;
-    padding-top: 56px;
-    width: 266px;
-    height: 100px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 65px;
+    padding-left: 50px;
+    width: 280px;
+    height: 122px;
+  }
+
+  #btn-get-pop {
+    margin-left: -40px;
+    margin-top: 188px;
   }
 }
 @media only screen and (max-width: 524px) {
   .img_popup {
-    display: none;
-  }
-
-  #close-pop-time {
-    margin-top: -10px;
+    margin-top: -100px;
+    width: 400px;
+    height: 200px;
   }
 
   .popup-time-content {
-    background: #288ffe;
-    width: 80%;
-    height: 300px;
-    border-radius: 20px;
+    background: none;
+    width: 420px;
+    height: 200px;
+    text-align: center;
   }
   .popup-time-content h3 {
     font-size: 18px;
-    padding-left: 0px;
-    padding-top: 66px;
-    width: 206px;
-    height: 100px;
+    line-height: 20px;
+    padding-top: 55px;
+    padding-left: 50px;
+    width: 280px;
+    height: 122px;
   }
 
-  #btn-get {
-    margin-top: 50px;
+  #btn-get-pop {
+    margin-left: -49px;
+    margin-top: 138px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .img_popup {
+    margin-top: -100px;
+    width: 300px;
+    height: 160px;
   }
 
-  #txt-get {
-    margin-top: 90px;
+  #btn-get-pop {
+    margin-left: -55px;
+    margin-top: 120px;
+  }
+
+  .popup-time-content {
+    background: none;
+    width: 310px;
+    height: 160px;
+    text-align: center;
+  }
+  .popup-time-content h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 250px;
+    height: 122px;
+  }
+
+  #close-pop-time svg {
+    width: 50px;
   }
 }
 .box-text-phone {
@@ -1746,6 +1785,10 @@
     line-height: 48px;
   }
 
+  #phone-animation {
+    right: 0px;
+  }
+
   .txt-online {
     font-size: 18px;
     line-height: 28px;
@@ -2043,6 +2086,10 @@
 
   #phone-animation {
     right: -16px;
+  }
+
+  #individ-block {
+    margin-top: -30px;
   }
 }
 @media screen and (max-width: 410px) {

@@ -11,7 +11,15 @@
     z-index: 1;
     position: relative;
 }
-
+#footer_about{
+    z-index: 44;
+}
+#footer-news{
+    z-index: 44; 
+}
+#footer-teacher{
+    z-index: 44; 
+}
 .catalog-section {
     padding-top: 130px;
 
@@ -99,6 +107,7 @@
 
     .catalog-section h2 span {
         font-size: 80px;
+    
     }
 
     .catalog-pics {
@@ -109,9 +118,15 @@
 @media (max-width: 575.8px) {
     .catalog-section h2 {
         font-size: 32px;
-
         span {
             font-size: 50px;
         }
     }
+}
+@media (max-width: 353px) {
+ #main_about-us {
+     .call-phone2 {
+         right: -23px;
+     }
+ }
 }

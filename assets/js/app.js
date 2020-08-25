@@ -11109,34 +11109,73 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
       document.getElementById("phone-animation").style.position = "fixed";
       document.getElementById("phone-animation").style.bottom = "20px";
       document.getElementById("individ-block").style.paddingTop = "70px";
+      var mql = window.matchMedia('all and (max-width: 353px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.right = "-20px";
+      }
     } else {
       // document.getElementById("individ-block").style.marginTop = "134px";
       document.getElementById("phone-animation").style.position = "relative";
       document.getElementById("phone-animation").style.bottom = "0px";
       document.getElementById("phone-animation").style.marginTop = "-100px";
       document.getElementById("individ-block").style.paddingTop = "20px";
+      var mql = window.matchMedia('all and (max-width: 353px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.right = "0px";
+      }
     }
   };
 
   window.onscroll = function () {
     scrollFunction();
   };
-} //pre
+} //
 
 
-if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('#main-container')) {
-  var loadData = function loadData() {
-    return new Promise(function (resolve, reject) {
-      setTimeout(resolve, 2000);
-    });
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.courses_page')) {
+  var _scrollFunction = function _scrollFunction() {
+    if (document.documentElement.scrollTop > 300) {
+      document.getElementById("footer-main").style.zIndex = "44";
+      document.getElementById("phone-animation").style.position = "fixed";
+      document.getElementById("phone-animation").style.bottom = "20px";
+      var mql = window.matchMedia('all and (max-width: 353px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.right = "-20px";
+      }
+    } else {
+      // document.getElementById("individ-block").style.marginTop = "134px";
+      document.getElementById("phone-animation").style.position = "relative";
+      document.getElementById("phone-animation").style.bottom = "0px";
+      document.getElementById("phone-animation").style.marginTop = "-100px";
+      var mql = window.matchMedia('all and (max-width: 353px)');
+
+      if (mql.matches) {
+        document.getElementById("phone-animation").style.right = "0px";
+      }
+    }
   };
 
-  loadData().then(function () {
-    var preloaderEl = document.getElementById('preloader');
-    preloaderEl.classList.add('hidden');
-    preloaderEl.classList.remove('visible');
-  });
-} //
+  window.onscroll = function () {
+    _scrollFunction();
+  };
+} // pre
+// if ($('*').is('#main-container')) {
+// function loadData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(resolve, 2000);
+//   })
+// }
+// loadData()
+//   .then(() => {
+//     let preloaderEl = document.getElementById('preloader');
+//     preloaderEl.classList.add('hidden');
+//     preloaderEl.classList.remove('visible');
+//   });
+// }
+//
 
 
 window.btnOver = function () {
@@ -11382,6 +11421,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.welcome-txt')) {
   var textTime = 1100;
   var textNode = document.querySelector('.welcome-txt');
   textWriter(textNode, textTime);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".yls-txt").delay(2000).fadeIn();
 } //
 
 
