@@ -11624,54 +11624,103 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-nav').slick({
   focusOnSelect: true,
   vertical: true,
   verticalSwiping: true
-}); // CALC
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap1 .next-step').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2').removeClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box2').addClass('active');
-}); // -2
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .prev-step').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap1').removeClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('active');
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .next-step').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3').removeClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
-}); // -3
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3 .prev-step').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2').removeClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box2').addClass('active');
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3 .next-step').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4').removeClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box4').addClass('active');
-}); // 4
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4 .prev-step').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3').removeClass('stephide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  // CALC
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap1 .next-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box2').addClass('active');
+  }); // -2
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .prev-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap1').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('active');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .next-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
+  }); // -3
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3 .prev-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box2').addClass('active');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3 .next-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box4').addClass('active');
+  }); // 4
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4 .prev-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box3').addClass('active');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4 .next-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap5').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3, .stepshead__box.box4').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box5').addClass('active');
+  }); // 5
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap5 .prev-step').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepnum').addClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap4').removeClass('stephide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box').removeClass('active').removeClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepshead__box.box4').addClass('active');
+  }); // if (document.getElementById('st21').checked) {
+  //     $('.stepwrap2 .btnssect .next-step').click(function () {
+  //         console.log('1');
+  //     });
+  // } else if (document.getElementById('st22').checked) {
+  //     $('.stepwrap2 .btnssect .next-step').click(function () {
+  //         console.log('2');
+  //     });
+  // }
+  // if ($('#st21:checked').length > 0) {
+  //     $('.stepwrap2 .btnssect .next-step').click(function () {
+  //         console.log('1');
+  //     });
+  // } else if ($('#st22:checked').length > 0) {
+  //     $('.stepwrap2 .btnssect .next-step').click(function () {
+  //         console.log('2');
+  //     });
+  // }
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input:radio[name="step2"]').change(function () {
+    if (this.checked && this.value == 'nativesp') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .btnssect .next-step').click(function () {
+        console.log('1');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3-var1').removeClass('hidestepvar');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3-var2').addClass('hidestepvar');
+      });
+    } else if (this.checked && this.value == 'no-nativesp') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap2 .btnssect .next-step').click(function () {
+        console.log('2');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3-var1').addClass('hidestepvar');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stepwrap3-var2').removeClass('hidestepvar');
+      });
+    }
+  });
+
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 768) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.sidebar-filter__cont .title').click(function () {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).next().slideToggle();
@@ -14401,8 +14450,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Vasyl\Desktop\YLS\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Vasyl\Desktop\YLS\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\flyfox05\Desktop\YLS\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

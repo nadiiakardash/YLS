@@ -231,7 +231,7 @@ header.darkheader {
         }
     }
 
-    .stepwrap3 {
+    .stepwrap4 {
         .radiofield {
             .radiofield__box {
                 max-width: 360px;
@@ -308,7 +308,7 @@ header.darkheader {
         flex-wrap: wrap;
     }
 
-    .stepwrap4 {
+    .stepwrap5 {
         .radiofield {
             display: flex;
 
@@ -464,33 +464,35 @@ footer .footer__content-right .footer__greenbtn:hover {
         padding-top: 5px;
     }
 
-    .calcform .stepwrap4 .radiofield .radiofield__box .radiobox {
+    .calcform .stepwrap5 .radiofield .radiofield__box .radiobox {
         padding: 0 24px;
     }
 
-    .calcform .stepwrap4 .radiofield .radiofield__box {
+    .calcform .stepwrap5 .radiofield .radiofield__box {
         height: 70px;
     }
 }
 
 @media(max-width:1199.8px) {
-    .calcform .stepwrap3 .radiofield .radiofield__box {
+    .calcform .stepwrap4 .radiofield .radiofield__box {
         max-width: 300px;
         padding: 60px 30px 50px 30px;
     }
+
     header.darkheader {
         height: 120px;
     }
-    .calcform .stepwrap3 .radiofield .radiofield__box label .titlest3 {
+
+    .calcform .stepwrap4 .radiofield .radiofield__box label .titlest3 {
         padding-bottom: 5px;
         margin-bottom: 15px;
     }
 
-    .calcform .stepwrap3 .radiofield .radiofield__box label .descrt3 {
+    .calcform .stepwrap4 .radiofield .radiofield__box label .descrt3 {
         margin-top: 15px;
     }
 
-    .calcform .stepwrap4 .radiofield {
+    .calcform .stepwrap5 .radiofield {
         justify-content: center;
 
         .radiofield__box {
@@ -498,11 +500,13 @@ footer .footer__content-right .footer__greenbtn:hover {
         }
     }
 }
+
 @media(max-width:767px) {
     header.darkheader {
         height: 90px;
     }
 }
+
 @media(max-width:991.8px) {
     .stepshead .stepshead__box .stepshead__num:after {
         display: none;
@@ -516,7 +520,7 @@ footer .footer__content-right .footer__greenbtn:hover {
         background-image: none;
     }
 
-    .calcform .stepwrap3 .radiofield {
+    .calcform .stepwrap4 .radiofield {
         justify-content: center;
 
         .radiofield__box {
@@ -569,9 +573,141 @@ footer .footer__content-right .footer__greenbtn:hover {
 }
 
 @media(max-width:517px) {
-  
+
 
     header.darkheader {
         height: 160px;
+    }
+}
+
+
+
+/* fix */
+.stepshead {
+    width: 100%;
+    max-width: initial;
+}
+
+.stepshead .stepshead__box .stepshead__num:after {
+    left: -60px;
+}
+
+.calcform .radiofield.radiofield__lang .radiofield__box {
+    width: auto;
+    background-image: url('../../img/radiofield-lang1.png');
+    background-size: 100% 100%;
+    padding: 0 50px;
+}
+
+.calcform .radiofield.radiofield__lang .radiofield__box:nth-child(2) {
+    background-image: url('../../img/radiofield-lang2.png');
+}
+
+.calcform .stepwrap4 .radiofield .radiofield__box {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.calcform .stepwrap4 .radiofield .radiofield__box label .descrt3 .des {
+    text-indent: 20px;
+}
+
+.calcform .stepwrap4 .radiofield .radiofield__box {
+    max-width: 380px;
+    margin-bottom: 50px;
+}
+
+.calcform .stepwrap4 .radiofield .radiofield__box label .titlest3 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.calcform .stepwrap4 .radiofield {
+    align-items: inherit;
+}
+
+.calcform .stepwrap5 .radiofield {
+    justify-content: center;
+}
+
+.calcform .stepwrap5 .radiofield .radiofield__box {
+    margin: 0 2% 50px 2%;
+}
+
+.stepwrap3-var2.hidestepvar,
+.stepwrap3-var1.hidestepvar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1199.8px) {
+    .calcform .stepwrap4 .radiofield .radiofield__box {
+        max-width: 32%;
+    }
+
+    .calcform .stepwrap4 .radiofield .radiofield__box {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .calcform .stepwrap4 .radiofield .radiofield__box {
+        max-width: 40%;
+    }
+}
+
+@media(max-width:767.8px) {
+    .calcform .stepwrap4 .radiofield .radiofield__box {
+        max-width: 48%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .calcform .stepwrap4 .radiofield {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:575.8px) {
+    .btnssect .prev-step {
+        margin-bottom: 15px;
+    }
+
+    .calcform .radiofield .radiofield__box .radiobox label {
+        display: block;
+    }
+
+    .calcform .stepwrap4 .radiofield .radiofield__box {
+        max-width: 100%;
+    }
+
+
+}
+
+@media(max-width:360.8px) {
+    .calcform .radiofield.radiofield__lang .radiofield__box {
+        padding: 0 30px;
     }
 }

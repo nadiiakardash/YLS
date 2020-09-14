@@ -116,66 +116,66 @@ if ($('*').is('.block-values')) {
         "retina_detect": true
     });
 }
- 
- 
+
+
 //
 if ($('*').is('.about-yls')) {
-  window.onscroll = function () { scrollFunction() };
-  function scrollFunction() {
-    if (document.documentElement.scrollTop > 300) {
-      document.getElementById("footer-main").style.zIndex = "44";
-      document.getElementById("phone-animation").style.position = "fixed";
-     
-      document.getElementById("phone-animation").style.bottom = "20px";
-      document.getElementById("individ-block").style.paddingTop= "70px";
-      var mql = window.matchMedia('all and (max-width: 353px)');
-      if (mql.matches) {
-          document.getElementById("phone-animation").style.right = "-20px";
-      }
-      
- }
- else {
-  // document.getElementById("individ-block").style.marginTop = "134px";
-  document.getElementById("phone-animation").style.position = "relative";
-  document.getElementById("phone-animation").style.bottom = "0px";
-  document.getElementById("phone-animation").style.marginTop = "-100px";
-  document.getElementById("individ-block").style.paddingTop= "20px";
-  var mql = window.matchMedia('all and (max-width: 353px)');
-    if (mql.matches) {
-        document.getElementById("phone-animation").style.right = "0px";
-      }
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.documentElement.scrollTop > 300) {
+            document.getElementById("footer-main").style.zIndex = "44";
+            document.getElementById("phone-animation").style.position = "fixed";
 
-}
-}
+            document.getElementById("phone-animation").style.bottom = "20px";
+            document.getElementById("individ-block").style.paddingTop = "70px";
+            var mql = window.matchMedia('all and (max-width: 353px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.right = "-20px";
+            }
+
+        }
+        else {
+            // document.getElementById("individ-block").style.marginTop = "134px";
+            document.getElementById("phone-animation").style.position = "relative";
+            document.getElementById("phone-animation").style.bottom = "0px";
+            document.getElementById("phone-animation").style.marginTop = "-100px";
+            document.getElementById("individ-block").style.paddingTop = "20px";
+            var mql = window.matchMedia('all and (max-width: 353px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.right = "0px";
+            }
+
+        }
+    }
 }
 //
 if ($('*').is('.courses_page')) {
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
-      if (document.documentElement.scrollTop > 300) {
-        document.getElementById("footer-main").style.zIndex = "44";
-        document.getElementById("phone-animation").style.position = "fixed";
-       
-        document.getElementById("phone-animation").style.bottom = "20px";
-         var mql = window.matchMedia('all and (max-width: 353px)');
-        if (mql.matches) {
-            document.getElementById("phone-animation").style.right = "-20px";
+        if (document.documentElement.scrollTop > 300) {
+            document.getElementById("footer-main").style.zIndex = "44";
+            document.getElementById("phone-animation").style.position = "fixed";
+
+            document.getElementById("phone-animation").style.bottom = "20px";
+            var mql = window.matchMedia('all and (max-width: 353px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.right = "-20px";
+            }
+
         }
-        
-   }
-   else {
-    // document.getElementById("individ-block").style.marginTop = "134px";
-    document.getElementById("phone-animation").style.position = "relative";
-    document.getElementById("phone-animation").style.bottom = "0px";
-    document.getElementById("phone-animation").style.marginTop = "-100px";
-     var mql = window.matchMedia('all and (max-width: 353px)');
-      if (mql.matches) {
-          document.getElementById("phone-animation").style.right = "0px";
+        else {
+            // document.getElementById("individ-block").style.marginTop = "134px";
+            document.getElementById("phone-animation").style.position = "relative";
+            document.getElementById("phone-animation").style.bottom = "0px";
+            document.getElementById("phone-animation").style.marginTop = "-100px";
+            var mql = window.matchMedia('all and (max-width: 353px)');
+            if (mql.matches) {
+                document.getElementById("phone-animation").style.right = "0px";
+            }
+
         }
-  
-  }
-  }
-  }
+    }
+}
 // pre
 // if ($('*').is('#main-container')) {
 
@@ -268,7 +268,7 @@ function btnOut6() {
 }
 //text writer
 $(document).ready(function () {
-  
+
     $('.single-item').slick({
         prevArrow: $('.prev-slider-video'),
         nextArrow: $('.next-slider-video'),
@@ -284,52 +284,53 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         prevArrow: $('.prev-slider-program'),
         nextArrow: $('.next-slider-program'),
-      });
-      //popup
-      var elementts = $('.modal-overlay-page, .modal-page');
-
-      $('.modal-btn-page').click(function () {
-        elementts.addClass('active-page');
-      });
-    
-      $('.close-modal-page').click(function () {
-        elementts.removeClass('active-page');
-      });
-      //popupphone
-      var element = $('.modal-overlay-call, .modal-call');
-
-      $('.modal-btn-call').click(function () {
-        element.addClass('active-call');
-      });
-    
-      $('.close-modal-call').click(function () {
-        element.removeClass('active-call');
-      });
-     //
-     
-  $(".call-phone2").click(function(){
-    $(".search-items").css("opacity", "0");
-  });
-  $(".close-modal-call").click(function(){
-    $(".search-items").css("opacity", "1");
-  });
-  //
-  $(".call-phone2").click(function(){
-    $(".search-mobile-cours").css("opacity", "0");
-  });
-  $(".close-modal-call").click(function(){
-    $(".search-mobile-cours").css("opacity", "1");
-  });
-
     });
+    //popup
+    var elementts = $('.modal-overlay-page, .modal-page');
+
+    $('.modal-btn-page').click(function () {
+        elementts.addClass('active-page');
+    });
+
+    $('.close-modal-page').click(function () {
+        elementts.removeClass('active-page');
+    });
+    //popupphone
+    var element = $('.modal-overlay-call, .modal-call');
+
+    $('.modal-btn-call').click(function () {
+        element.addClass('active-call');
+    });
+
+    $('.close-modal-call').click(function () {
+        element.removeClass('active-call');
+    });
+    //
+
+    $(".call-phone2").click(function () {
+        $(".search-items").css("opacity", "0");
+    });
+    $(".close-modal-call").click(function () {
+        $(".search-items").css("opacity", "1");
+    });
+    //
+    $(".call-phone2").click(function () {
+        $(".search-mobile-cours").css("opacity", "0");
+    });
+    $(".close-modal-call").click(function () {
+        $(".search-mobile-cours").css("opacity", "1");
+    });
+
+});
 // });
 //
 if ($('*').is('.about-yls')) {
-function PopTime() {
-  document.getElementById("popupTime").style.display = "block";   
-}
+    function PopTime() {
+        document.getElementById("popupTime").style.display = "block";
+    }
 
-setTimeout(PopTime, 9000);}
+    setTimeout(PopTime, 9000);
+}
 //adaptive slider
 // var mql = window.matchMedia('(min-width: 820px) and (max-width: 1380px)');
 // if (mql.matches) {
@@ -399,7 +400,7 @@ if ($('*').is('.welcome-txt')) {
 //
 window.closepopTime = function () { closepopTime() };
 function closepopTime() {
-    document.getElementById("popupTime").style.display = "none";   
+    document.getElementById("popupTime").style.display = "none";
 }
 //
 window.BigVideo = function () { BigVideo() };
@@ -443,7 +444,7 @@ function closeGallery2() {
     document.getElementById("social-network").style.opacity = "1";
     document.getElementById("text-follow").style.opacity = "1";
     document.getElementById("phone-animation").style.opacity = "1";
-    
+
 
 }
 //
@@ -557,59 +558,122 @@ $('.slider-nav').slick({
     verticalSwiping: true
 });
 
-// CALC
-$('.stepwrap1 .next-step').click(function () {
-    $('.stepnum').addClass('stephide');
-    $('.stepwrap2').removeClass('stephide');
 
-    $('.stepshead__box').removeClass('active');
-    $('.stepshead__box.box1').addClass('check');
-    $('.stepshead__box.box2').addClass('active');
-});
-// -2
-$('.stepwrap2 .prev-step').click(function () {
-    $('.stepnum').addClass('stephide');
-    $('.stepwrap1').removeClass('stephide');
 
-    $('.stepshead__box').removeClass('active');
-    $('.stepshead__box').removeClass('check');
-    $('.stepshead__box.box1').addClass('active');
-});
-$('.stepwrap2 .next-step').click(function () {
-    $('.stepnum').addClass('stephide');
-    $('.stepwrap3').removeClass('stephide');
-
-    $('.stepshead__box').removeClass('active');
-    $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
-    $('.stepshead__box.box3').addClass('active');
-});
-// -3
-$('.stepwrap3 .prev-step').click(function () {
-    $('.stepnum').addClass('stephide');
-    $('.stepwrap2').removeClass('stephide');
-
-    $('.stepshead__box').removeClass('active').removeClass('check');
-    $('.stepshead__box.box1').addClass('check');
-    $('.stepshead__box.box2').addClass('active');
-});
-$('.stepwrap3 .next-step').click(function () {
-    $('.stepnum').addClass('stephide');
-    $('.stepwrap4').removeClass('stephide');
-
-    $('.stepshead__box').removeClass('active');
-    $('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
-    $('.stepshead__box.box4').addClass('active');
-});
-// 4
-$('.stepwrap4 .prev-step').click(function () {
-    $('.stepnum').addClass('stephide');
-    $('.stepwrap3').removeClass('stephide');
-
-    $('.stepshead__box').removeClass('active').removeClass('check');
-    $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
-    $('.stepshead__box.box3').addClass('active');
-});
 $(document).ready(function () {
+
+    // CALC
+    $('.stepwrap1 .next-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap2').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active');
+        $('.stepshead__box.box1').addClass('check');
+        $('.stepshead__box.box2').addClass('active');
+    });
+    // -2
+    $('.stepwrap2 .prev-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap1').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active');
+        $('.stepshead__box').removeClass('check');
+        $('.stepshead__box.box1').addClass('active');
+    });
+    $('.stepwrap2 .next-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap3').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active');
+        $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+        $('.stepshead__box.box3').addClass('active');
+    });
+    // -3
+    $('.stepwrap3 .prev-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap2').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active').removeClass('check');
+        $('.stepshead__box.box1').addClass('check');
+        $('.stepshead__box.box2').addClass('active');
+    });
+    $('.stepwrap3 .next-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap4').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active');
+        $('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
+        $('.stepshead__box.box4').addClass('active');
+    });
+    // 4
+    $('.stepwrap4 .prev-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap3').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active').removeClass('check');
+        $('.stepshead__box.box1, .stepshead__box.box2').addClass('check');
+        $('.stepshead__box.box3').addClass('active');
+    });
+    $('.stepwrap4 .next-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap5').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active');
+        $('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3, .stepshead__box.box4').addClass('check');
+        $('.stepshead__box.box5').addClass('active');
+    });
+    // 5
+    $('.stepwrap5 .prev-step').click(function () {
+        $('.stepnum').addClass('stephide');
+        $('.stepwrap4').removeClass('stephide');
+
+        $('.stepshead__box').removeClass('active').removeClass('check');
+        $('.stepshead__box.box1, .stepshead__box.box2, .stepshead__box.box3').addClass('check');
+        $('.stepshead__box.box4').addClass('active');
+    });
+
+    // if (document.getElementById('st21').checked) {
+    //     $('.stepwrap2 .btnssect .next-step').click(function () {
+    //         console.log('1');
+    //     });
+
+
+    // } else if (document.getElementById('st22').checked) {
+    //     $('.stepwrap2 .btnssect .next-step').click(function () {
+    //         console.log('2');
+    //     });
+    // }
+
+    // if ($('#st21:checked').length > 0) {
+    //     $('.stepwrap2 .btnssect .next-step').click(function () {
+    //         console.log('1');
+    //     });
+    // } else if ($('#st22:checked').length > 0) {
+    //     $('.stepwrap2 .btnssect .next-step').click(function () {
+    //         console.log('2');
+    //     });
+    // }
+
+    $('input:radio[name="step2"]').change(
+        function () {
+            if (this.checked && this.value == 'nativesp') {
+                $('.stepwrap2 .btnssect .next-step').click(function () {
+                    console.log('1');
+                    $('.stepwrap3-var1').removeClass('hidestepvar');
+                    $('.stepwrap3-var2').addClass('hidestepvar');
+                });
+            } else if (this.checked && this.value == 'no-nativesp') {
+                $('.stepwrap2 .btnssect .next-step').click(function () {
+                    console.log('2');
+                    $('.stepwrap3-var1').addClass('hidestepvar');
+                    $('.stepwrap3-var2').removeClass('hidestepvar');
+                });
+            }
+        });
+
+
+
+
     if ($(window).width() < 768) {
         $('.sidebar-filter__cont .title').click(function () {
             $(this).next().slideToggle();
