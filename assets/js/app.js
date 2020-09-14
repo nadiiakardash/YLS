@@ -11735,6 +11735,17 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
         jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().toggleClass('rotatebefore');
       });
     }
+  }); // fix
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".abcours-btnsection").on("click", "a", function (event) {
+      event.preventDefault();
+      var id = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href'),
+          top = jquery__WEBPACK_IMPORTED_MODULE_0___default()(id).offset().top;
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body,html').animate({
+        scrollTop: top
+      }, 1500);
+    });
   });
 });
 
