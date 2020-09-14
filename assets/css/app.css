@@ -590,7 +590,14 @@ Dots */
   color: #ffffff;
   list-style-type: none;
 }
-
+.menu-items a{
+  transition: 0.5s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu-items a:hover {
+  color: #6eb52c;
+}
 .down-item {
   display: block;
   padding-bottom: 10px;
@@ -907,7 +914,7 @@ Dots */
   width: 330px;
   height: 50px;
   padding-left: 16px;
-  margin-bottom: 25px;
+  margin-top: 20px;
 }
 .form-popup .input-popup::-moz-placeholder {
   font-size: 16px;
@@ -1225,6 +1232,7 @@ Dots */
   margin-left: 20px;
   cursor: pointer;
   transition: 0.3s ease;
+  border: none;
 }
 .btn_send-call:hover {
   -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
@@ -1297,7 +1305,7 @@ Dots */
     width: 280px;
     height: 50px;
     padding-left: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 }
 .call-phone {
@@ -1563,7 +1571,7 @@ Dots */
     width: 400px;
     height: 200px;
   }
-
+ 
   .popup-time-content {
     background: none;
     width: 420px;
@@ -5928,7 +5936,9 @@ header {
   .text_photo {
     margin-top: 40px;
   }
-
+  .block-teachers{
+    margin-top: 20px;
+  }
   .data_photo-gallery {
     margin-bottom: 20px;
     margin-top: 20px;
