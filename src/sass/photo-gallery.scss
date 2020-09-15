@@ -81,3 +81,99 @@ margin-top: -18px;
       }
    
 }
+
+
+// FIX
+.lightbox {
+    top: 0 !important;
+    left: initial !important;
+}
+
+#lightboxOverlay {
+    height: 100vh !important;
+    top: 0;
+    position: absolute;
+}
+.lb-dataContainer {
+    display: none !important;
+}
+#lightbox {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lb-outerContainer {
+    background-color: #fff;
+    display: block;
+}
+
+.lb-closeContainer .lb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../img/closegall.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.lb-prev,.lb-next {
+    width: 60px;
+    height: 58px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.lb-prev {
+    left: 200px;
+    background-image: url('../../img/leftarr-gall.svg');
+}
+
+.lb-next {
+    right: 200px;
+    background-image: url('../../img/rightarr-gall.svg');
+}
+
+@media(max-width: 1440.8px) {
+    .lb-prev {
+        left: 50px;
+    }
+    
+    .lb-next {
+        right: 50px;
+    }
+}
+
+@media(max-width: 767.8px) {
+    .lb-prev {
+        left: 20px;
+    }
+    
+    .lb-next {
+        right: 20px;
+    }
+}
+
+
+@media(max-width: 575.8px) {
+    .lb-prev {
+        left: 10px;
+    }
+    
+    .lb-next {
+        right: 10px;
+    }
+}

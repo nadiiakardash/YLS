@@ -1,5 +1,9 @@
 import $ from "jquery";
 require('./slick/slick');
+import { default as lightbox } from "lightbox2";
+
+console.log(lightbox);
+
 // const Parallax = require('parallax-js');
 
 //
@@ -411,60 +415,60 @@ function BigVideo() {
 
 }
 // -
-window.BigGallery = function () { BigGallery() };
-function BigGallery() {
-    document.getElementById("img_modal").style.display = "block";
-    document.getElementById("social-network").style.opacity = "0";
-    document.getElementById("text-follow").style.opacity = "0";
-    document.getElementById("phone-animation").style.opacity = "0";
+// window.BigGallery = function () { BigGallery() };
+// function BigGallery() {
+//     document.getElementById("img_modal").style.display = "block";
+//     document.getElementById("social-network").style.opacity = "0";
+//     document.getElementById("text-follow").style.opacity = "0";
+//     document.getElementById("phone-animation").style.opacity = "0";
 
-}
+// }
 //
-window.closeGallery = function () { closeGallery() };
-function closeGallery() {
-    document.getElementById("img_modal").style.display = "none";
-    document.getElementById("social-network").style.opacity = "1";
-    document.getElementById("text-follow").style.opacity = "1";
-    document.getElementById("phone-animation").style.opacity = "1";
+// window.closeGallery = function () { closeGallery() };
+// function closeGallery() {
+//     document.getElementById("img_modal").style.display = "none";
+//     document.getElementById("social-network").style.opacity = "1";
+//     document.getElementById("text-follow").style.opacity = "1";
+//     document.getElementById("phone-animation").style.opacity = "1";
 
-}
+// }
 //
-window.BigGallery2 = function () { BigGallery2() };
-function BigGallery2() {
-    document.getElementById("img_modal2").style.display = "block";
-    document.getElementById("social-network").style.opacity = "0";
-    document.getElementById("text-follow").style.opacity = "0";
-    document.getElementById("phone-animation").style.opacity = "0";
+// window.BigGallery2 = function () { BigGallery2() };
+// function BigGallery2() {
+//     document.getElementById("img_modal2").style.display = "block";
+//     document.getElementById("social-network").style.opacity = "0";
+//     document.getElementById("text-follow").style.opacity = "0";
+//     document.getElementById("phone-animation").style.opacity = "0";
 
-}
+// }
 //
-window.closeGallery2 = function () { closeGallery2() };
-function closeGallery2() {
-    document.getElementById("img_modal2").style.display = "none";
-    document.getElementById("social-network").style.opacity = "1";
-    document.getElementById("text-follow").style.opacity = "1";
-    document.getElementById("phone-animation").style.opacity = "1";
+// window.closeGallery2 = function () { closeGallery2() };
+// function closeGallery2() {
+//     document.getElementById("img_modal2").style.display = "none";
+//     document.getElementById("social-network").style.opacity = "1";
+//     document.getElementById("text-follow").style.opacity = "1";
+//     document.getElementById("phone-animation").style.opacity = "1";
 
 
-}
+// }
 //
-window.BigGallery3 = function () { BigGallery3() };
-function BigGallery3() {
-    document.getElementById("img_modal3").style.display = "block";
-    document.getElementById("social-network").style.opacity = "0";
-    document.getElementById("text-follow").style.opacity = "0";
-    document.getElementById("phone-animation").style.opacity = "0";
+// window.BigGallery3 = function () { BigGallery3() };
+// function BigGallery3() {
+//     document.getElementById("img_modal3").style.display = "block";
+//     document.getElementById("social-network").style.opacity = "0";
+//     document.getElementById("text-follow").style.opacity = "0";
+//     document.getElementById("phone-animation").style.opacity = "0";
 
-}
+// }
 //
-window.closeGallery3 = function () { closeGallery3() };
-function closeGallery3() {
-    document.getElementById("img_modal3").style.display = "none";
-    document.getElementById("social-network").style.opacity = "1";
-    document.getElementById("text-follow").style.opacity = "1";
-    document.getElementById("phone-animation").style.opacity = "1";
+// window.closeGallery3 = function () { closeGallery3() };
+// function closeGallery3() {
+//     document.getElementById("img_modal3").style.display = "none";
+//     document.getElementById("social-network").style.opacity = "1";
+//     document.getElementById("text-follow").style.opacity = "1";
+//     document.getElementById("phone-animation").style.opacity = "1";
 
-}
+// }
 //
 window.openNav = function () { openNav() };
 function openNav() {
@@ -719,14 +723,24 @@ $(document).ready(function () {
         }
     });
 
-    // fix
-    $(document).ready(function () {
-        $(".abcours-btnsection").on("click", "a", function (event) {
-            event.preventDefault();
-            var id = $(this).attr('href'),
-                top = $(id).offset().top;
-            $('body,html').animate({ scrollTop: top }, 1500);
-        });
+
+
+});
+
+// fix
+$(document).ready(function () {
+    $(".abcours-btnsection").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
     });
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'wrapAround': true,
+        'showImageNumberLabel': false
+    })
 
 });
