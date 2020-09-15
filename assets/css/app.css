@@ -2607,6 +2607,21 @@ Dots */
   cursor: pointer;
 }
 
+@media (max-width: 1140.8px) {
+  .single-item__slide .video {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700.8px) {
+  .single-item__slide .video {
+    margin: 0 auto;
+    max-width: 290px;
+  }
+
+  .single-item__slide .wrapper {
+    margin-top: 50px;
+  }
+}
 .block-about {
   width: 1290px;
   height: 548px;
