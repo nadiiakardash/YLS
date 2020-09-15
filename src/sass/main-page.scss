@@ -2379,3 +2379,35 @@
     border: none;
     background: transparent;
 }
+
+
+// FIX
+.single-item__slide .video {
+    width: 100%;
+    max-width: 509px;
+    margin: 0 0 0 20px;
+    display: block;
+}
+.single-item__slide .wrapper{
+    display:table;
+    width:auto;
+    position:relative;
+    width:100%;
+    margin-top: 40px;
+}
+.single-item__slide .playpause {
+    background-image:url('../../img/maonplaybtn.svg');
+    background-repeat:no-repeat;
+    width:65px;
+    height:65px;
+    position:absolute;
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size:contain;
+    background-position: center;
+    cursor: pointer;
+}

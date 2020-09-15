@@ -11538,62 +11538,61 @@ function closeNav() {
   document.getElementById("myNav").style.position = "none";
   document.getElementById("main-container").style.opacity = "1";
 } //video  slider 1
+// if ($('*').is('.single-item')) {
+//     document.addEventListener("DOMContentLoaded", setupControl, false);
+//     function setupControl() {
+//         var myVideo = document.getElementById("video-in-block");
+//         if (myVideo.canPlayType) {
+//             myVideo.removeAttribute("controls");
+//             myVideo.addEventListener("ended", endPlayback, false);
+//             myVideo.addEventListener("play", function () {
+//                 document.getElementById("start").disabled = true;
+//                 document.getElementById("pause").disabled = false;
+//             }, false);
+//             myVideo.addEventListener("pause", function () {
+//                 document.getElementById("start").disabled = false;
+//                 document.getElementById("pause").disabled = true;
+//             }, false);
+//             document.getElementById("start").addEventListener("click", startPlayback, false);
+//             document.getElementById("pause").addEventListener("click", pausePlayback, false);
+//         }
+//     }
+//     window.startvideo = function () { startvideo() };
+//     function startvideo() {
+//         document.getElementById("start").style.display = "none";
+//         document.getElementById("pause").style.display = "inline";
+//         // myVideo.setAttribute("controls");
+//     }
+//     window.pausevideo = function () { pausevideo() };
+//     function pausevideo() {
+//         document.getElementById("start").style.display = "inline";
+//         document.getElementById("pause").style.display = "none";
+//     }
+//     function startPlayback() {
+//         document.getElementById("video-in-block").play();
+//     }
+//     function pausePlayback() {
+//         document.getElementById("video-in-block").pause();
+//     }
+//     function endPlayback() {
+//         document.getElementById("start").disabled = false;
+//         document.getElementById("pause").disabled = true;
+//         document.getElementById("pause").style.display = "none";
+//         document.getElementById("start").style.display = "inline";
+//     }
+// }
 
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.single-item')) {
-  var setupControl = function setupControl() {
-    var myVideo = document.getElementById("video-in-block");
-
-    if (myVideo.canPlayType) {
-      myVideo.removeAttribute("controls");
-      myVideo.addEventListener("ended", endPlayback, false);
-      myVideo.addEventListener("play", function () {
-        document.getElementById("start").disabled = true;
-        document.getElementById("pause").disabled = false;
-      }, false);
-      myVideo.addEventListener("pause", function () {
-        document.getElementById("start").disabled = false;
-        document.getElementById("pause").disabled = true;
-      }, false);
-      document.getElementById("start").addEventListener("click", startPlayback, false);
-      document.getElementById("pause").addEventListener("click", pausePlayback, false);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.video').parent().click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children(".video").get(0).paused) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children(".video").get(0).play();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children(".playpause").fadeOut();
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children(".video").get(0).pause();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).children(".playpause").fadeIn();
     }
-  };
-
-  var startvideo = function startvideo() {
-    document.getElementById("start").style.display = "none";
-    document.getElementById("pause").style.display = "inline"; // myVideo.setAttribute("controls");
-  };
-
-  var pausevideo = function pausevideo() {
-    document.getElementById("start").style.display = "inline";
-    document.getElementById("pause").style.display = "none";
-  };
-
-  var startPlayback = function startPlayback() {
-    document.getElementById("video-in-block").play();
-  };
-
-  var pausePlayback = function pausePlayback() {
-    document.getElementById("video-in-block").pause();
-  };
-
-  var endPlayback = function endPlayback() {
-    document.getElementById("start").disabled = false;
-    document.getElementById("pause").disabled = true;
-    document.getElementById("pause").style.display = "none";
-    document.getElementById("start").style.display = "inline";
-  };
-
-  document.addEventListener("DOMContentLoaded", setupControl, false);
-
-  window.startvideo = function () {
-    startvideo();
-  };
-
-  window.pausevideo = function () {
-    pausevideo();
-  };
+  });
 } // SCROLL TO TOP
 
 
