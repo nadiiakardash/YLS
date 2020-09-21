@@ -743,4 +743,21 @@ $(document).ready(function () {
         'showImageNumberLabel': false
     })
 
+
+    // ONLY 2 checkboxes
+    var limit = 3;
+    $('input.checkvar1').on('change', function (evt) {
+        if ($('input.checkvar1:checked').length >= limit) {
+            this.checked = false;
+        }
+    });
+
+    $('input.checkvar2').on('change', function (evt) {
+        if ($('input.checkvar2:checked').length >= limit) {
+            this.checked = false;
+        }
+    });
+
+
 });
+

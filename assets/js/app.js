@@ -12294,7 +12294,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     'resizeDuration': 200,
     'wrapAround': true,
     'alwaysShowNavOnTouchDevices': true
-  }, _defineProperty(_lightbox$option, "wrapAround", true), _defineProperty(_lightbox$option, 'showImageNumberLabel', false), _lightbox$option));
+  }, _defineProperty(_lightbox$option, "wrapAround", true), _defineProperty(_lightbox$option, 'showImageNumberLabel', false), _lightbox$option)); // ONLY 2 checkboxes
+
+  var limit = 3;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input.checkvar1').on('change', function (evt) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('input.checkvar1:checked').length >= limit) {
+      this.checked = false;
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('input.checkvar2').on('change', function (evt) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('input.checkvar2:checked').length >= limit) {
+      this.checked = false;
+    }
+  });
 });
 
 /***/ }),
