@@ -2457,9 +2457,14 @@
     }
 
     .single-item__slide .wrapper {
-        margin-top: 50px;
+        margin-top: 40px;
+        margin-left: 15px;
+     
     }
-
+    .single-item__slide .wrapper iframe{
+        height: 180px;
+        width: 300px;
+    }
     .popup-time-content .btn_send {
         margin: 0 0 0 -52px !important;
     }
@@ -2486,5 +2491,9 @@
 @media(max-width:390.8px) {
     .popup-time-content h3 {
         box-sizing: border-box;
+    }
+    .single-item__slide .wrapper iframe{
+        height: 180px;
+        width: 280px;
     }
 }
