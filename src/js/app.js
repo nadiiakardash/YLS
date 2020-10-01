@@ -131,7 +131,7 @@ if ($('*').is('.about-yls')) {
             document.getElementById("phone-animation").style.position = "fixed";
 
             document.getElementById("phone-animation").style.bottom = "20px";
-            document.getElementById("individ-block").style.paddingTop = "70px";
+            // document.getElementById("individ-block").style.paddingTop = "70px";
             var mql = window.matchMedia('all and (max-width: 353px)');
             if (mql.matches) {
                 document.getElementById("phone-animation").style.right = "-20px";
@@ -143,7 +143,7 @@ if ($('*').is('.about-yls')) {
             document.getElementById("phone-animation").style.position = "relative";
             document.getElementById("phone-animation").style.bottom = "0px";
             document.getElementById("phone-animation").style.marginTop = "-100px";
-            document.getElementById("individ-block").style.paddingTop = "20px";
+            // document.getElementById("individ-block").style.paddingTop = "20px";
             var mql = window.matchMedia('all and (max-width: 353px)');
             if (mql.matches) {
                 document.getElementById("phone-animation").style.right = "0px";

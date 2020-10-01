@@ -11673,8 +11673,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
     if (document.documentElement.scrollTop > 300) {
       document.getElementById("footer-main").style.zIndex = "44";
       document.getElementById("phone-animation").style.position = "fixed";
-      document.getElementById("phone-animation").style.bottom = "20px";
-      document.getElementById("individ-block").style.paddingTop = "70px";
+      document.getElementById("phone-animation").style.bottom = "20px"; // document.getElementById("individ-block").style.paddingTop = "70px";
+
       var mql = window.matchMedia('all and (max-width: 353px)');
 
       if (mql.matches) {
@@ -11684,8 +11684,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.about-yls')) {
       // document.getElementById("individ-block").style.marginTop = "134px";
       document.getElementById("phone-animation").style.position = "relative";
       document.getElementById("phone-animation").style.bottom = "0px";
-      document.getElementById("phone-animation").style.marginTop = "-100px";
-      document.getElementById("individ-block").style.paddingTop = "20px";
+      document.getElementById("phone-animation").style.marginTop = "-100px"; // document.getElementById("individ-block").style.paddingTop = "20px";
+
       var mql = window.matchMedia('all and (max-width: 353px)');
 
       if (mql.matches) {

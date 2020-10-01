@@ -316,6 +316,10 @@ Dots */
   outline: none;
 }
 
+#individ-block {
+  padding-top: 60px;
+}
+
 #preloader {
   position: fixed;
   left: 0;
