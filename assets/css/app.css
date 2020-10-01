@@ -1489,7 +1489,7 @@ Dots */
   .popup-time-content {
     background: none;
     width: 650px;
-    height: 339px;
+    height: 319px;
     text-align: center;
   }
   .popup-time-content h3 {
@@ -1507,7 +1507,7 @@ Dots */
 
   .img_popup {
     display: block;
-    margin-top: -100px;
+    margin-top: -120px;
     width: 650px;
     height: 330px;
     position: absolute;
@@ -1522,6 +1522,7 @@ Dots */
   }
 
   #close-pop-time {
+    margin-top: 10px;
     right: 0;
     position: relative;
     z-index: 99;
@@ -1530,12 +1531,16 @@ Dots */
   #btn-get-pop {
     margin-left: -95px;
     position: absolute;
-    margin-top: 220px;
+    margin-top: 240px;
   }
 }
 @media only screen and (max-width: 798px) {
   #close-pop-time svg {
     width: 70px;
+  }
+
+  .popup-time-content {
+    padding-left: 20px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1565,6 +1570,11 @@ Dots */
     margin-top: 188px;
   }
 }
+@media only screen and (max-width: 545px) {
+  .popup-time-content {
+    padding-left: 10px;
+  }
+}
 @media only screen and (max-width: 524px) {
   .img_popup {
     margin-top: -100px;
@@ -1591,33 +1601,48 @@ Dots */
     margin-left: -49px;
     margin-top: 138px;
   }
+
+  #close-pop-time {
+    margin-top: -10px;
+  }
 }
 @media only screen and (max-width: 390px) {
   .img_popup {
-    margin-top: -100px;
-    width: 300px;
-    height: 160px;
+    margin-top: -60px;
+    width: 286px;
+    height: 140px;
+  }
+
+  #close-pop-time {
+    margin-right: 5px;
+    margin-top: -10px;
+  }
+
+  #txt-get {
+    padding-left: 20px;
   }
 
   #btn-get-pop {
-    margin-left: -55px;
-    margin-top: 120px;
+    padding-left: 20px;
+    margin-left: -45px;
+    margin-top: 150px;
   }
 
   .popup-time-content {
     background: none;
-    width: 310px;
+    width: 295px;
     height: 160px;
     text-align: center;
+    padding-left: 13px;
   }
   .popup-time-content h3 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     padding-top: 40px;
     padding-left: 60px;
     width: 250px;
-    height: 122px;
+    height: 152px;
   }
 
   #close-pop-time svg {
